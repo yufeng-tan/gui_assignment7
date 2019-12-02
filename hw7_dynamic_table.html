@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+  Name: Yufeng Tan
+  E-mail: Yufeng_Tan@student.uml.edu
+  Assignment: hw7, Using the jQuery Validation Plugin with Your Dynamic Table
+              validation using the jQuery Validation plugin (http://plugins.jquery.com).
+-->
+
+<html>
+  <head>
+    <title>GUI I homework 7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hw7.css">
+    <!-- jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- jquery validation plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="validation.js"></script>
+
+  </head>
+  <body>
+    <div id="page">
+      <h1 id="header">Interactive Dynamic Table</h1>
+        <p>Please enter the starting and ending numbers for the multiplication table</p>
+          <!-- follow input forms examples on https://www.w3schools.com/js/js_input_examples.asp -->
+          <form id="multiplicationForm" name="multiplicationForm" action="#">
+                multiplier Starting: <input type="text" id="multiplier_start" name="multiplier_start">
+            <br>multiplier Ending: <input type="text" id="multiplier_end" name="multiplier_end">
+            <br>multiplicant Starting: <input type="text" id="multiplicant_start" name="multiplicant_start">
+            <br>multiplicant Ending: <input type="text" id="multiplicant_end" name="multiplicant_end">
+            <br><input type="submit" value="submit">
+          </form>
+    </div>
+    <script src="table.js"></script>
+    <div id="table"></div>
+  </body>
+</html>
